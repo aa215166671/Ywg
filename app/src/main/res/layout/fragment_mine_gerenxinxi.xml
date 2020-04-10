@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <ImageView
+            android:id="@+id/fanhui_gerenxinxi"
+            android:layout_width="20sp"
+            android:layout_height="20sp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10sp"
+            android:layout_marginLeft="10sp"
+            android:src="@drawable/fanhui" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10sp"
+            android:text="个人信息"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150sp"
+        android:background="@drawable/beijing2">
+
+        <RelativeLayout
+            android:id="@+id/touxiangrl_gerenxinxi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:id="@+id/touxiang_gerenxinxi"
+                android:onClick="touxiang_gerenxinxi"
+                android:layout_width="80sp"
+                android:layout_height="80sp"
+                android:layout_marginTop="20sp"/>
+
+            <ImageView
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:src="@drawable/zhaoxiangji"
+                android:layout_marginTop="70sp"
+                android:layout_marginLeft="50sp"/>
+
+        </RelativeLayout>
+
+        <Button
+            android:layout_below="@+id/touxiangrl_gerenxinxi"
+            android:layout_width="wrap_content"
+            android:layout_height="25sp"
+            android:text="ID:001"
+            android:textSize="10sp"
+            android:textColor="#FFFF"
+            android:layout_marginTop="5sp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/yuanjiao_tuoyuan"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="5sp"
+        android:background="#CCCC"
+        android:alpha="0.5"></RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/nicheng_gerenxinxi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15sp"
+            android:gravity="center"
+            android:text="昵称"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/shuju_nicheng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50sp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15sp"
+            android:textColor="#000000"
+            android:textSize="15sp"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1sp"
+        android:background="#CCCCCC"></RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/xingbie_gerenxinxi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15sp"
+            android:gravity="center"
+            android:text="性别"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/shuju_xingbie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50sp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15sp"
+            android:textColor="#000000"
+            android:textSize="15sp"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1sp"
+        android:background="#CCCCCC"></RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/shengri_gerenxinxi"
+        android:onClick="shengri_gerenxinxi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15sp"
+            android:gravity="center"
+            android:text="生日"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/shuju_shengri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50sp"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/shuju_xingzuo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5sp"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#CCCCCC"
+        android:alpha="0.5"></RelativeLayout>
+
+</LinearLayout>

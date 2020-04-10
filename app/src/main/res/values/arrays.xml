@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="post_classification">
+        <item>悬 赏</item>
+        <item>快 递 </item>
+        <item>帮 帮</item>
+        <item>跳 蚤</item>
+        <item>兼 职</item>
+    </string-array>
+</resources>

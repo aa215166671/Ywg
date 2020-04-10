@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_alignParentBottom="true">
+
+            <ImageView
+                android:id="@+id/fanhui_shishizhengce"
+                android:layout_width="20sp"
+                android:layout_height="20sp"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="10sp"
+                android:layout_marginLeft="10sp"
+                android:src="@drawable/fanhui" />
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="时事政策"
+                android:textSize="18sp"/>
+
+        </RelativeLayout>
+    
+    </RelativeLayout>
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#000">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150sp"
+                        android:background="@drawable/beijing2"
+                        android:alpha="0.8"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_centerInParent="true">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="第一届人民代表大会"
+                            android:textSize="20sp"
+                            android:textColor="#FFF"
+                            android:layout_gravity="center_horizontal"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="第一期"
+                            android:textSize="18sp"
+                            android:textColor="#FFF"
+                            android:layout_gravity="center_horizontal"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1000"
+                            android:textSize="12sp"
+                            android:textColor="#FFF"
+                            android:drawableLeft="@drawable/yanjing"
+                            android:layout_gravity="center_horizontal"/>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100sp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20sp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="第一批国产网络审核"
+                            android:textColor="#000"
+                            android:textSize="15sp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="5sp">
+
+                            <ImageView
+                                android:layout_width="30sp"
+                                android:layout_height="30sp"
+                                android:background="@drawable/logo"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="你就是个猪"
+                                android:textSize="12sp"
+                                android:gravity="center"
+                                android:layout_marginLeft="15sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1000"
+                                android:textSize="12sp"
+                                android:drawableLeft="@drawable/yanjing2"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="50sp"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="100sp"
+                        android:layout_height="100sp"
+                        android:background="@drawable/a05"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="10sp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100sp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20sp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="5G牌照发放，对你我意味着什么?"
+                            android:textSize="15sp"
+                            android:textColor="#000"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="5sp">
+
+                            <ImageView
+                                android:layout_width="30sp"
+                                android:layout_height="30sp"
+                                android:background="@drawable/logo"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="你就是个猪"
+                                android:textSize="12sp"
+                                android:gravity="center"
+                                android:layout_marginLeft="15sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1000"
+                                android:textSize="12sp"
+                                android:drawableLeft="@drawable/yanjing2"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="50sp"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="100sp"
+                        android:layout_height="100sp"
+                        android:background="@drawable/a05"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="10sp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#000">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150sp"
+                        android:background="@drawable/beijing2"
+                        android:alpha="0.8"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_centerInParent="true">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="第一届人民代表大会"
+                            android:textSize="20sp"
+                            android:textColor="#FFF"
+                            android:layout_gravity="center_horizontal"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="第二期"
+                            android:textSize="18sp"
+                            android:textColor="#FFF"
+                            android:layout_gravity="center_horizontal"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1000"
+                            android:textSize="12sp"
+                            android:textColor="#FFF"
+                            android:drawableLeft="@drawable/yanjing"
+                            android:layout_gravity="center_horizontal"/>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100sp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20sp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="垃圾分类如何“智能又时尚”?"
+                            android:textSize="15sp"
+                            android:textColor="#000"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="5sp">
+
+                            <ImageView
+                                android:layout_width="30sp"
+                                android:layout_height="30sp"
+                                android:background="@drawable/logo"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="你就是个猪"
+                                android:textSize="12sp"
+                                android:gravity="center"
+                                android:layout_marginLeft="15sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1000"
+                                android:textSize="12sp"
+                                android:drawableLeft="@drawable/yanjing2"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="50sp"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="100sp"
+                        android:layout_height="100sp"
+                        android:background="@drawable/a05"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="10sp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100sp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20sp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="5G牌照发放，对你我意味着什么?"
+                            android:textSize="15sp"
+                            android:textColor="#000"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="5sp">
+
+                            <ImageView
+                                android:layout_width="30sp"
+                                android:layout_height="30sp"
+                                android:background="@drawable/logo"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="你就是个猪"
+                                android:textSize="12sp"
+                                android:gravity="center"
+                                android:layout_marginLeft="15sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1000"
+                                android:textSize="12sp"
+                                android:drawableLeft="@drawable/yanjing2"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="50sp"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="100sp"
+                        android:layout_height="100sp"
+                        android:background="@drawable/a05"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="10sp"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </ScrollView>
+
+</LinearLayout>

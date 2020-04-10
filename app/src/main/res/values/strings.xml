@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">探点校园</string>
+
+    <string name="main_essence_text">首页</string>
+    <string name="main_mine_text">我</string>
+    <string name="main_newpost_text">操场</string>
+    <string name="main_attention_text">消息</string>
+    <string name="main_mine_title_text">我的</string>
+
+    <string name="login_phone_text">账号</string>
+    <string name="login_password_text">密码</string>
+    <string name="login_register_text">注册账号</string>
+    <string name="login_forget_password_text">忘记密码？</string>
+    <string name="login_quick_text">快速登录</string>
+    <string name="login_qq_text">QQ登录</string>
+    <string name="login_sina_text">新浪登录</string>
+    <string name="login_tencent_text">腾讯微博</string>
+    <string name="login_login_text">登录</string>
+    <string name="hide_down">隐藏</string>
+    <string name="comment_content">输入评论内容</string>
+    <string name="send">发送</string>
+
+    <string name="login_and_register_text">登录/注册</string>
+
+    <array name="essence_video_tab">
+        <item>全部@dream@0</item>
+        <item>视频@dream@1</item>
+        <item>声音@dream@2</item>
+        <item>图片@dream@3</item>
+        <item>段子@dream@4</item>
+        <item>广告@dream@5</item>
+        <item>剧情@dream@6</item>
+    </array>
+
+    <array name="newpost_video_tab">
+        <item>关注@dream@0</item>
+        <item>推荐@dream@1</item>
+        <item>视频@dream@2</item>
+        <item>图文@dream@3</item>
+    </array>
+
+    <array name="attention_video_tab">
+        <item>提醒@dream@0</item>
+        <item>私信@dream@1</item>
+    </array>
+
+    <string name="title_1">武大生科夏令营落幕，武理学子收获颇丰</string>
+    <string name="title_2">生命科学创新创业大赛，武理化生学院再创佳绩</string>
+    <string name="title_3">辽宁石油化工大学：万水千山不忘来时路 暑来寒往不言逐梦苦</string>
+    <string name="title_4">重庆三峡博物馆引进苏甦国画作品展 师生80幅代表作首次同框亮</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="text_1">7月8日至10日，武汉大学生命科学学院夏令营活动顺利开展，并于7月27日下发优秀营员通知。武汉理工大学生物系三位同学：易灿、李锐、贾睿靓通过此次夏令营，......</string>
+    <string name="text_2">2019年7月26日，全国大学生生命创新创业大赛在吉林大学举行，并于27日圆满结束。武汉理工大学化生学院在此次比赛中再创佳绩。......</string>
+    <string name="text_3">辽宁石油化工大学经济管理学院2019年暑假家访侧记：十二年寒来暑往踏遍万水千山，十二载春华秋实走访千户家庭，辽宁石油化工大学经济管理学院的老师们在家访的......</string>
+    <string name="text_4">5月11日上午“传承前辈丹青精神，繁荣西南绘画艺术——西南大学美术学院苏甦教授师生国画联展”开幕式在重庆市三峡博物馆三楼临展厅举行。......</string>
+
+    <string name="some_error_occurred">下载失败</string>
+    <string name="start">下载</string>
+    <string name="completed">完成</string>
+    <string name="pause">暂停</string>
+    <string name="cancel">取消</string>
+    <string name="resume">继续</string>
+    <string name="restart">重新开始</string>
+
+    <string name="rule_password">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ`¬!"£$%^*()~=#{}[];':,./?/*-_+&#060;&#062;&#038;&#064;</string>
+    <string name="rule_username">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ&#064;.</string>
+    <string name="rule_email">0123456789qcom&#064;.</string>
+    <string name="viewpager_indicator">%1$d/%2$d</string>
+
+</resources>

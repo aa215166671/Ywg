@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/zuo"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/mj_zuo_tupian"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:scaleType="fitXY"/>
+        <TextView
+            android:id="@+id/tv_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="50浏览"
+            android:textColor="#ff0000"
+            />
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_below="@id/mj_zuo_tupian"
+            android:layout_width="150sp"
+            android:layout_height="wrap_content"
+            android:text="还能这样学习的吗!!!!!!"/>
+    </RelativeLayout>
+
+</FrameLayout>

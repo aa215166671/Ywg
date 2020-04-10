@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QS_1"
+    android:background="@drawable/beijing">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="80sp"
+        android:layout_height="80sp"
+        android:layout_marginTop="80sp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/touxiang"/>
+
+    <Button
+        android:id="@+id/btn_shoujidenglu"
+        android:onClick="shouji_click"
+        android:layout_above="@id/ll_btnjihe"
+        android:layout_width="320sp"
+        android:layout_height="60sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5sp"
+        android:background="@drawable/btn_shape"
+        android:text="手机一键登录"/>
+
+    <LinearLayout
+        android:id="@+id/ll_btnjihe"
+        android:layout_width="320sp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10sp">
+
+        <Button
+            android:id="@+id/btn_login"
+            android:onClick="denglu_click"
+            android:layout_width="0dp"
+            android:layout_height="60sp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_shape"
+            android:layout_marginRight="5sp"
+            android:text="登录"/>
+
+        <Button
+            android:id="@+id/btn_zhuce"
+            android:onClick="zhuce_click"
+            android:layout_width="0dp"
+            android:layout_height="60sp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_shape"
+            android:text="注册"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

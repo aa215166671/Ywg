@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/jh_touxiang"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:src="@drawable/touxiang"/>
+
+        <TextView
+            android:id="@+id/jh_name"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/jh_touxiang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="多岁的"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="13dp"
+        android:id="@+id/delete"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/guanbi"
+        android:background="#00000000"
+        />
+
+    <TextView
+        android:id="@+id/jh_neirong"
+        android:layout_below="@id/rl_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5sp"
+        android:text="古娜拉黑暗之神-呼呼拉呼-黑魔变身"/>
+
+    <ImageView
+        android:id="@+id/jh_neirongtupian"
+        android:layout_width="match_parent"
+        android:layout_height="170sp"
+        android:layout_below="@+id/jh_neirong"
+        android:layout_margin="3sp"
+        android:scaleType="fitXY">
+
+    </ImageView>
+
+    <LinearLayout
+        android:id="@+id/gongnneg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/jh_neirongtupian"
+        android:background="#CCFF"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="35sp"
+            android:layout_height="35sp"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:src="@drawable/zan" />
+
+        <TextView
+            android:id="@+id/jh_dianzan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="100" />
+
+        <ImageButton
+            android:layout_width="35sp"
+            android:layout_height="35sp"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:src="@drawable/fanzan" />
+
+        <TextView
+            android:id="@+id/jh_budianzan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="100" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_pinglun"
+            android:onClick="imgbtn_pinglun"
+            android:layout_width="35sp"
+            android:layout_height="35sp"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:src="@drawable/pinglun" />
+
+        <TextView
+            android:id="@+id/jh_pinglun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="100" />
+
+        <ImageButton
+            android:layout_width="35sp"
+            android:layout_height="35sp"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:src="@drawable/zhuanfa" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@id/gongnneg"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#000"
+        android:alpha="0.1">
+    </LinearLayout>
+
+</RelativeLayout>

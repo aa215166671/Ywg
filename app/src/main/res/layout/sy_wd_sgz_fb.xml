@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <ImageView
+            android:id="@+id/fanhui_shiguangzhou"
+            android:layout_width="20sp"
+            android:layout_height="20sp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10sp"
+            android:layout_marginLeft="10sp"
+            android:onClick="fanhui_fabu"
+            android:src="@drawable/fanhui" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10sp"
+            android:text="时光轴"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_beijingyanse"
+        android:background="#CCCC"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rl_fabuneirong"
+            android:layout_width="match_parent"
+            android:layout_height="250sp"
+            android:padding="5sp"
+            android:background="#ffff">
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="250sp"
+                android:background="#00000000"
+                android:gravity="top"
+                android:hint="最多1000字"
+                android:layout_weight="1"
+                android:inputType="textPersonName"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/rl_fabuneirong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:orientation="horizontal"
+            android:background="#fff"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:background="@drawable/a05"/>
+
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/fabu_shiguangzhou"
+            android:layout_width="340sp"
+            android:layout_height="60sp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10sp"
+            android:background="@drawable/yuanjiao_lan"
+            android:onClick="add"
+            android:text="发布"
+            android:textSize="25sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

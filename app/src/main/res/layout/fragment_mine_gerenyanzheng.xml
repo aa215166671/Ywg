@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+            <ImageView
+                android:id="@+id/fanhui_gerenyanzheng"
+                android:layout_width="20sp"
+                android:layout_height="20sp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10sp"
+                android:layout_marginLeft="10sp"
+                android:src="@drawable/fanhui" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10sp"
+                android:text="个人验证"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="5sp"
+            android:background="#CCCCCC"></RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/xingming_gerenyanzheng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50sp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15sp"
+                android:gravity="center"
+                android:text="姓名"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/shuju_xingming"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15sp"
+                android:text="江**" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:background="#CCCCCC"></RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/xuehao_gerenyanzheng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50sp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15sp"
+                android:gravity="center"
+                android:text="学号"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/shuju_xuehao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15sp"
+                android:text="201*******" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="5sp"
+            android:background="#CCCCCC"></RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/diqu_gerenyanzheng"
+            android:onClick="diqu_gerenyanzheng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50sp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15sp"
+                android:gravity="center"
+                android:text="地区"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/shuju_diqu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15sp"
+                android:text="集美区" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:background="#CCCCCC"></RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/xuexiao_gerenyanzheng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50sp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15sp"
+                android:gravity="center"
+                android:text="学校"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/shuju_xuexiao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15sp"
+                android:text="厦门兴才职业技术学院" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:background="#CCCCCC"></RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/xueyuan_gerenyanzheng"
+            android:onClick="xueyuan_gerenyanzheng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50sp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15sp"
+                android:gravity="center"
+                android:text="学院"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/shuju_xueyuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15sp"
+                android:text="工学院" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:background="#CCCCCC"></RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/xueshengzheng_gerenyanzheng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50sp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15sp"
+                android:gravity="center"
+                android:text="学生证"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/shuju_xueshengzheng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15sp"
+                android:text="已上传"
+                android:textColor="#0066ff" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="5sp"
+            android:background="#CCCCCC"></RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15sp">
+
+            <Button
+                android:id="@+id/queding_gerenyanzheng"
+                android:layout_width="320sp"
+                android:layout_height="50sp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/yuanjiao_lan"
+                android:text="提交"
+                android:textColor="#FFFF"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

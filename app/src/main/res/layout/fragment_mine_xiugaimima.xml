@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <ImageView
+            android:id="@+id/fanhui_xiugaimima"
+            android:layout_width="20sp"
+            android:layout_height="20sp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10sp"
+            android:layout_marginLeft="10sp"
+            android:src="@drawable/fanhui" />
+
+        <TextView
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="修改密码"
+            android:textSize="18sp"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="旧密码:"
+        android:textSize="15sp"
+        android:layout_margin="15sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1sp"
+        android:background="#CCCCCC"></RelativeLayout>
+    <EditText
+        android:paddingLeft="15sp"
+        android:id="@+id/jiumima_xiugaimima"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:background="#00000000"
+        android:hint="输入旧密码"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1sp"
+        android:background="#CCCCCC"></RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="新密码:"
+        android:textSize="15sp"
+        android:layout_margin="15sp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1sp"
+        android:background="#CCCCCC"></RelativeLayout>
+    <EditText
+        android:paddingLeft="15sp"
+        android:id="@+id/xinmima_xiugaimima"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:background="#00000000"
+        android:hint="输入新密码"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1sp"
+        android:background="#CCCCCC"></RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_marginTop="15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/queding_xiugaimima"
+            android:layout_width="320sp"
+            android:layout_height="50sp"
+            android:text="确定"
+            android:textSize="15sp"
+            android:textColor="#FFFF"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/yuanjiao_lan"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="显示密码"
+            android:layout_marginLeft="15sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="账号申诉"
+            android:textColor="#0066FF"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20sp"/>
+
+    </RelativeLayout>
+    
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="@color/blue"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
+            android:text="您的生日为："
+            android:textColor="@color/black_text"
+            android:textSize="20dp"/>
+        <TextView
+            android:id="@+id/xingzuo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/black_text"
+            android:textSize="20dp"
+            android:text="* * 座"/>
+        <Button
+            android:id="@+id/set_shengri"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:text="确定"
+            android:background="@drawable/biankuangxian"
+            />
+    </RelativeLayout>
+
+
+        <com.kyun.android.baisibudejie.pro.mine.view.mine_all.SGZ_file.RiliView.PickerView
+            android:id="@+id/pv_time"
+            android:layout_width="match_parent"
+            android:layout_height="350dp" />
+
+    </LinearLayout>

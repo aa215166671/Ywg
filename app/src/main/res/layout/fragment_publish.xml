@@ -1,0 +1,206 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:clickable="true">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/buju1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:id="@+id/post_return"
+                android:layout_width="35sp"
+                android:layout_height="35sp"
+                android:src="@drawable/fanhui" />
+
+            <Button
+                android:id="@+id/post_send"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:text="发布" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/buju2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buju1">
+
+            <EditText
+                android:id="@+id/post_text"
+                android:layout_width="match_parent"
+                android:layout_height="180sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:background="@null"
+                android:fadeScrollbars="false"
+                android:gravity="top|left"
+                android:hint="请发布你的意见吧......"
+                android:inputType="textMultiLine"
+                android:scrollbars="horizontal|vertical"
+                android:textSize="17dp" />
+<LinearLayout
+    android:id="@+id/buju_img"
+    android:layout_below="@+id/post_text"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/post_img"
+                android:layout_marginLeft="20dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="250dp"
+                android:scaleType="fitXY"
+                android:layout_centerHorizontal="true" />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="250dp"
+                android:scaleType="fitXY"
+                />
+</LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/buju_img"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/Post_Photo"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:background="@drawable/xiangce1" />
+
+                    <TextView
+                        android:id="@+id/TextPhoto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="打开相册" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/Post_Camera"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:background="@drawable/xiangji1" />
+
+                    <TextView
+                        android:id="@+id/TextCamera"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="打开相机" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/buju3"
+            android:layout_below="@id/buju2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@color/twospinner">
+
+            <ImageView
+                android:id="@+id/post_call_img"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/wifi" />
+
+            <TextView
+                android:id="@+id/post_call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/post_call_img"
+                android:layout_marginLeft="12dp"
+                android:text="提醒谁看"
+                android:textColor="@color/essence_tab_text_color_press"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/textV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:hint="你需要提醒的朋友吧"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/post_call_tiao"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/item_jiantou" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/buju4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buju3"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/twospinner"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/post_where_img"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/wifi" />
+
+            <LinearLayout
+                android:layout_toRightOf="@+id/post_where_img"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <fan.mytwospinner.adapter.MyTwoSpinner
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </fan.mytwospinner.adapter.MyTwoSpinner>>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>
+</FrameLayout>

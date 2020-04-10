@@ -1,0 +1,778 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <ImageView
+            android:id="@+id/fanhui_wodehaoyou"
+            android:layout_width="20sp"
+            android:layout_height="20sp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10sp"
+            android:layout_marginLeft="10sp"
+            android:src="@drawable/fanhui" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10sp"
+            android:text="我的好友"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/sousuo_wodehaoyou"
+        android:layout_width="match_parent"
+        android:layout_height="45sp"
+        android:layout_margin="10sp"
+        android:background="@drawable/sousuokuang_hui">
+
+        <SearchView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:queryHint="搜索内容"
+            android:background="#00000000"/>
+
+    </RelativeLayout>
+
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10sp">
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFF"></TabWidget>
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70sp">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/wodehaoyou_wodehaoyou"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50sp"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10sp">
+
+                            <ImageView
+                                android:layout_width="40sp"
+                                android:layout_height="40sp"
+                                android:background="@drawable/logo"
+                                android:layout_marginLeft="15sp"/>
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="15sp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="小猫"
+                                    android:textSize="15sp"
+                                    android:textColor="#000000"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="[在线]"
+                                    android:textSize="12sp"
+                                    android:textColor="#cccc"
+                                    android:layout_marginTop="25sp"/>
+
+                                <Button
+                                    android:id="@+id/fasongxiaoxi_wodehaoyou"
+                                    android:layout_width="60sp"
+                                    android:layout_height="30sp"
+                                    android:text="发送消息"
+                                    android:background="@drawable/yuanjiao_lan"
+                                    android:textSize="12sp"
+                                    android:textColor="#FFF"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"/>
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50sp"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10sp">
+
+                            <ImageView
+                                android:layout_width="40sp"
+                                android:layout_height="40sp"
+                                android:background="@drawable/logo"
+                                android:layout_marginLeft="15sp"/>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="15sp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="小猪"
+                                    android:textSize="15sp"
+                                    android:textColor="#000000"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="[在线]"
+                                    android:textSize="12sp"
+                                    android:textColor="#cccc"
+                                    android:layout_marginTop="25sp"/>
+
+                                <Button
+                                    android:layout_width="60sp"
+                                    android:layout_height="30sp"
+                                    android:text="发送消息"
+                                    android:background="@drawable/yuanjiao_lan"
+                                    android:textSize="12sp"
+                                    android:textColor="#FFF"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"/>
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50sp"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10sp">
+
+                            <ImageView
+                                android:layout_width="40sp"
+                                android:layout_height="40sp"
+                                android:background="@drawable/logo"
+                                android:layout_marginLeft="15sp"/>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="15sp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="小狗"
+                                    android:textSize="15sp"
+                                    android:textColor="#000000"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="[在线]"
+                                    android:textSize="12sp"
+                                    android:textColor="#cccc"
+                                    android:layout_marginTop="25sp"/>
+
+                                <Button
+                                    android:layout_width="60sp"
+                                    android:layout_height="30sp"
+                                    android:text="发送消息"
+                                    android:background="@drawable/yuanjiao_lan"
+                                    android:textSize="12sp"
+                                    android:textColor="#FFF"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"/>
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50sp"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10sp">
+
+                            <ImageView
+                                android:layout_width="40sp"
+                                android:layout_height="40sp"
+                                android:background="@drawable/logo"
+                                android:layout_marginLeft="15sp"/>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="15sp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="小鼠"
+                                    android:textSize="15sp"
+                                    android:textColor="#000000"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="[在线]"
+                                    android:textSize="12sp"
+                                    android:textColor="#cccc"
+                                    android:layout_marginTop="25sp"/>
+
+                                <Button
+                                    android:layout_width="60sp"
+                                    android:layout_height="30sp"
+                                    android:text="发送消息"
+                                    android:background="@drawable/yuanjiao_lan"
+                                    android:textSize="12sp"
+                                    android:textColor="#FFF"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"/>
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50sp"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10sp">
+
+                            <ImageView
+                                android:layout_width="40sp"
+                                android:layout_height="40sp"
+                                android:background="@drawable/logo"
+                                android:layout_marginLeft="15sp"/>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="15sp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="小牛"
+                                    android:textSize="15sp"
+                                    android:textColor="#000000"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="[在线]"
+                                    android:textSize="12sp"
+                                    android:textColor="#cccc"
+                                    android:layout_marginTop="25sp"/>
+
+                                <Button
+                                    android:layout_width="60sp"
+                                    android:layout_height="30sp"
+                                    android:text="发送消息"
+                                    android:background="@drawable/yuanjiao_lan"
+                                    android:textSize="12sp"
+                                    android:textColor="#FFF"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"/>
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50sp"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10sp">
+
+                            <ImageView
+                                android:layout_width="40sp"
+                                android:layout_height="40sp"
+                                android:background="@drawable/logo"
+                                android:layout_marginLeft="15sp"/>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="15sp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="小羊"
+                                    android:textSize="15sp"
+                                    android:textColor="#000000"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="[在线]"
+                                    android:textSize="12sp"
+                                    android:textColor="#cccc"
+                                    android:layout_marginTop="25sp"/>
+
+                                <Button
+                                    android:layout_width="60sp"
+                                    android:layout_height="30sp"
+                                    android:text="发送消息"
+                                    android:background="@drawable/yuanjiao_lan"
+                                    android:textSize="12sp"
+                                    android:textColor="#FFF"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"/>
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50sp"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10sp">
+
+                            <ImageView
+                                android:layout_width="40sp"
+                                android:layout_height="40sp"
+                                android:background="@drawable/logo"
+                                android:layout_marginLeft="15sp"/>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="15sp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="小鸡"
+                                    android:textSize="15sp"
+                                    android:textColor="#000000"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="[在线]"
+                                    android:textSize="12sp"
+                                    android:textColor="#cccc"
+                                    android:layout_marginTop="25sp"/>
+
+                                <Button
+                                    android:layout_width="60sp"
+                                    android:layout_height="30sp"
+                                    android:text="发送消息"
+                                    android:background="@drawable/yuanjiao_lan"
+                                    android:textSize="12sp"
+                                    android:textColor="#FFF"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"/>
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50sp"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10sp">
+
+                            <ImageView
+                                android:layout_width="40sp"
+                                android:layout_height="40sp"
+                                android:background="@drawable/logo"
+                                android:layout_marginLeft="15sp"/>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="15sp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="小虎"
+                                    android:textSize="15sp"
+                                    android:textColor="#000000"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="[在线]"
+                                    android:textSize="12sp"
+                                    android:textColor="#cccc"
+                                    android:layout_marginTop="25sp"/>
+
+                                <Button
+                                    android:layout_width="60sp"
+                                    android:layout_height="30sp"
+                                    android:text="发送消息"
+                                    android:background="@drawable/yuanjiao_lan"
+                                    android:textSize="12sp"
+                                    android:textColor="#FFF"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"/>
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+            </ScrollView>
+
+            <LinearLayout
+                android:id="@+id/wodexueyuan_wodehaoyou"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10sp">
+
+                    <ImageView
+                        android:layout_width="40sp"
+                        android:layout_height="40sp"
+                        android:background="@drawable/logo"
+                        android:layout_marginLeft="15sp"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15sp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="工学院"
+                            android:textSize="15sp"
+                            android:textColor="#000000"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="计算机专业"
+                            android:textSize="12sp"
+                            android:textColor="#cccc"
+                            android:layout_marginTop="25sp"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10sp">
+
+                    <ImageView
+                        android:layout_width="40sp"
+                        android:layout_height="40sp"
+                        android:background="@drawable/logo"
+                        android:layout_marginLeft="15sp"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15sp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="艺术学院"
+                            android:textSize="15sp"
+                            android:textColor="#000000"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="艺术生群体"
+                            android:textSize="12sp"
+                            android:textColor="#cccc"
+                            android:layout_marginTop="25sp"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10sp">
+
+                    <ImageView
+                        android:layout_width="40sp"
+                        android:layout_height="40sp"
+                        android:background="@drawable/logo"
+                        android:layout_marginLeft="15sp"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15sp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="教育学院"
+                            android:textSize="15sp"
+                            android:textColor="#000000"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="教育专业最棒了"
+                            android:textSize="12sp"
+                            android:textColor="#cccc"
+                            android:layout_marginTop="25sp"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tianjiahaoyou_wodehaoyou"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/sousuo_tianjiahaoyou"
+                    android:layout_width="match_parent"
+                    android:layout_height="45sp"
+                    android:background="@drawable/sousuokuang_hui">
+
+                    <SearchView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:queryHint="ID/手机号"
+                        android:background="#00000000"/>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10sp">
+
+                    <ImageView
+                        android:layout_width="40sp"
+                        android:layout_height="40sp"
+                        android:background="@drawable/logo"
+                        android:layout_marginLeft="15sp"/>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15sp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="小猫"
+                            android:textSize="15sp"
+                            android:textColor="#000000"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="请求添加你为好友"
+                            android:textSize="12sp"
+                            android:textColor="#cccc"
+                            android:layout_marginTop="25sp"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true">
+
+                            <ImageView
+                                android:layout_width="30sp"
+                                android:layout_height="30sp"
+                                android:src="@drawable/tianjiahaoyou"
+                                android:layout_alignParentRight="true"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginRight="10sp"/>
+
+                            <ImageView
+                                android:layout_width="22sp"
+                                android:layout_height="22sp"
+                                android:src="@drawable/shanchuhaoyou"
+                                android:layout_alignParentRight="true"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginRight="15sp"/>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10sp">
+
+                    <ImageView
+                        android:layout_width="40sp"
+                        android:layout_height="40sp"
+                        android:background="@drawable/logo"
+                        android:layout_marginLeft="15sp"/>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15sp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="小猪"
+                            android:textSize="15sp"
+                            android:textColor="#000000"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="请求添加你为好友"
+                            android:textSize="12sp"
+                            android:textColor="#cccc"
+                            android:layout_marginTop="25sp"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true">
+
+                            <ImageView
+                                android:layout_width="30sp"
+                                android:layout_height="30sp"
+                                android:src="@drawable/tianjiahaoyou"
+                                android:layout_alignParentRight="true"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginRight="10sp"/>
+
+                            <ImageView
+                                android:layout_width="22sp"
+                                android:layout_height="22sp"
+                                android:src="@drawable/shanchuhaoyou"
+                                android:layout_alignParentRight="true"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginRight="15sp"/>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10sp">
+
+                    <ImageView
+                        android:layout_width="40sp"
+                        android:layout_height="40sp"
+                        android:background="@drawable/logo"
+                        android:layout_marginLeft="15sp"/>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15sp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="小狗"
+                            android:textSize="15sp"
+                            android:textColor="#000000"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="请求添加你为好友"
+                            android:textSize="12sp"
+                            android:textColor="#cccc"
+                            android:layout_marginTop="25sp"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true">
+
+                            <ImageView
+                                android:layout_width="30sp"
+                                android:layout_height="30sp"
+                                android:src="@drawable/tianjiahaoyou"
+                                android:layout_alignParentRight="true"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginRight="10sp"/>
+
+                            <ImageView
+                                android:layout_width="22sp"
+                                android:layout_height="22sp"
+                                android:src="@drawable/shanchuhaoyou"
+                                android:layout_alignParentRight="true"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginRight="15sp"/>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </TabHost>
+
+</LinearLayout>

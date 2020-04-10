@@ -1,0 +1,28 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <RelativeLayout
+        android:id="@+id/publish_buju1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/publish_return"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/guanbi"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+    </RelativeLayout>
+        <ExpandableListView
+            android:id="@+id/expandableListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/publish_buju1"
+            android:cacheColorHint="#00000000"
+            android:divider="#ebebeb"
+            android:dividerHeight="1dp"
+            android:footerDividersEnabled="false"
+            android:groupIndicator="@null" >
+        </ExpandableListView>
+</RelativeLayout>

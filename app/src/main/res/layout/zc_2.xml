@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/beijing">
+
+    <LinearLayout
+        android:id="@+id/ll_yingyonglan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp">
+
+        <ImageButton
+            android:id="@+id/img_fanhui"
+            android:layout_width="40sp"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:onClick="fanhui_click"
+            android:src="@drawable/fanhui" />
+
+    </LinearLayout>
+    <ImageView
+        android:layout_below="@id/ll_yingyonglan"
+        android:id="@+id/logo"
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/touxiang"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_shengfenxinxi"
+        android:layout_below="@id/logo"
+        android:layout_marginTop="20sp"
+        android:layout_width="280sp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <EditText
+            android:id="@+id/edit_shoujihaoma"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:background="@drawable/btn_shape"
+            android:gravity="center"
+            android:layout_marginBottom="10sp"
+            android:inputType="text"
+            android:singleLine="true"
+            android:digits="@string/rule_username"
+            android:hint="输入账号"/>
+
+        <LinearLayout
+            android:id="@+id/ll_huoquyanzhengma"
+            android:layout_below="@id/edit_shoujihaoma"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:layout_marginBottom="10sp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edit_huoquyanzhengma"
+                android:layout_width="0dp"
+                android:layout_height="50sp"
+                android:layout_weight="1"
+                android:layout_marginRight="30sp"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLines="1"
+                android:background="@drawable/btn_shape"
+                android:hint="验证码"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="50sp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_shape"
+                android:text="获取验证码"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edit_mima"
+            android:layout_below="@id/ll_huoquyanzhengma"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:background="@drawable/btn_shape"
+            android:gravity="center"
+            android:layout_marginBottom="10sp"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:digits="@string/rule_password"
+            android:hint="输入密码"/>
+
+        <EditText
+            android:id="@+id/edit_zaishurumima"
+            android:layout_below="@id/edit_mima"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:background="@drawable/btn_shape"
+            android:gravity="center"
+            android:layout_marginBottom="10sp"
+            android:singleLine="true"
+            android:digits="@string/rule_password"
+            android:hint="再输入密码"/>
+
+        <EditText
+            android:id="@+id/edit_youxiang"
+            android:layout_below="@id/edit_zaishurumima"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:background="@drawable/btn_shape"
+            android:gravity="center"
+            android:layout_marginBottom="10sp"
+            android:hint="输入邮箱"
+            android:digits="@string/rule_email"
+            android:singleLine="true"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_tijiao"
+        android:layout_below="@+id/rl_shengfenxinxi"
+        android:onClick="tijiao_click"
+        android:layout_width="230sp"
+        android:layout_height="50sp"
+        android:background="@drawable/btn_shape"
+        android:layout_centerHorizontal="true"
+        android:text="提交"/>
+
+    <LinearLayout
+        android:id="@+id/ll_xieyi"
+        android:layout_below="@id/btn_tijiao"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/zc_gou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="同意协议"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="《探点校园安全条款》"
+            android:textColor="#0000FF"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_above="@+id/tv_mingzi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="-----------------V1.0-----------------"
+        android:textColor="#FFFFFF"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tv_mingzi"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30sp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BY探点校园"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

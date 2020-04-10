@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.kyun.android.baisibudejie">
+
+    <!-- 腾讯地图 SDK 要求的权限(开始) -->
+    <!-- 访问网络获取地图服务 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 检查网络可用性 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 访问WiFi状态 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 需要外部存储写权限用于保存地图缓存 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 获取 device id 辨别设备 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 通过GPS得到精确位置 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 通过网络得到粗略位置 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 访问网络，某些位置信息需要从网络服务器获取 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 访问WiFi状态，需要WiFi信息用于网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 修改WiFi状态，发起WiFi扫描, 需要WiFi信息用于网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 访问网络状态, 检测网络的可用性，需要网络运营商相关信息用于网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 访问网络的变化, 需要某些信息用于网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <!-- 访问手机当前状态, 需要某些信息用于网络定位 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 删除文件 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+
+    <!-- 腾讯地图 SDK 要求的权限(结束) -->
+
+    <uses-feature android:name="android.hardware.camera" />
+    <!--相机权限-->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!--写入SD卡的权限：如果你希望保存相机拍照后的照片-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--读取SD卡的权限:打开相册选取图片所必须的权限-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 下载时不提示通知栏 -->
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:largeHeap="true"
+        android:windowSoftInputMode="stateVisible|adjustResize"
+        android:hardwareAccelerated="false">
+        <activity android:name=".MainActivity">
+        </activity>
+        <activity android:name=".LauncherActivity"
+            android:hardwareAccelerated="false">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".pro.mine.view.LoginActivity"/>
+        <activity android:name=".pro.essense.view.essence_all.TD_file.TDmap"/>
+        <activity android:name=".pro.essense.view.essence_all.SD_file.SdActivity"/>
+        <activity android:name=".pro.essense.view.essence_all.YB_file.YBActivity"/>
+        <activity android:name=".pro.essense.view.essence_all.JH_file.JhActivity"/>
+        <activity android:name=".pro.essense.view.essence_all.BB_file.BBActivity"/>
+        <activity android:name=".pro.essense.view.essence_all.XYHD_file.XYHD"/>
+        <activity android:name=".pro.essense.view.essence_all.XYXB_file.XYXB"/>
+        <activity android:name=".pro.essense.view.essence_all.SSZC"/>
+        <activity android:name=".pro.mine.view.mine_all.SZ_file.SZ"/>
+        <activity android:name=".pro.mine.view.mine_all.SZ_file.ZHAQ"/>
+        <activity android:name=".pro.mine.view.mine_all.SZ_file.XXTS"/>
+        <activity android:name=".pro.mine.view.mine_all.SZ_file.XGMM"/>
+        <activity android:name=".pro.mine.view.mine_all.SZ_file.YPBDHY"/>
+        <activity android:name=".pro.mine.view.mine_all.GRYZ_file.GRYZ"/>
+        <activity android:name=".pro.mine.view.mine_all.GRYZ_file.XM"/>
+        <activity android:name=".pro.mine.view.mine_all.GRYZ_file.XH"/>
+        <activity android:name=".pro.mine.view.mine_all.GRYZ_file.XX"/>
+        <activity android:name=".pro.mine.view.mine_all.GRYZ_file.XSZ"/>
+        <activity android:name=".pro.mine.view.mine_all.WDTZ"/>
+        <activity android:name=".pro.mine.view.mine_all.WDPL"/>
+        <activity android:name=".pro.mine.view.mine_all.WZGD"/>
+        <activity android:name=".pro.mine.view.mine_all.WDHY"/>
+        <activity android:name=".pro.mine.view.mine_all.LT"/>
+        <activity android:name=".pro.mine.view.mine_all.TDXZ_file.TDXZ"/>
+        <activity android:name=".pro.mine.view.mine_all.WDSC"/>
+        <activity android:name=".pro.mine.view.mine_all.WDXZ"/>
+        <activity android:name=".pro.mine.view.mine_all.AZB_file.AZB"/>
+        <activity android:name=".pro.mine.view.mine_all.LLLS"/>
+        <activity android:name=".pro.mine.view.mine_all.XHW_file.XHW"/>
+        <activity android:name=".pro.mine.view.mine_all.XHW_file.TDXYGLGF"/>
+        <activity android:name=".pro.mine.view.mine_all.XHW_file.TDXYGY"/>
+        <activity android:name=".pro.mine.view.mine_all.XHW_file.WGSHZQ"/>
+        <activity android:name=".pro.mine.view.mine_all.XHW_file.SQGG"/>
+        <activity android:name=".pro.mine.view.mine_all.XHW_file.XHWCLMD"/>
+        <activity android:name=".pro.mine.view.mine_all.XHW_file.WDCF"/>
+        <activity android:name=".pro.mine.view.mine_all.SGZ_file.GRXX"/>
+        <activity android:name=".pro.mine.view.mine_all.SGZ_file.SGZ"/>
+        <activity android:name=".pro.mine.view.mine_all.SGZ_file.Set_name"/>
+        <activity android:name=".pro.mine.view.mine_all.SGZ_file.Publish_send"/>
+        <activity android:name=".DL_3"/>
+        <activity android:name=".ZC_2"/>
+        <activity android:name=".SJDL_3"/>
+        <activity android:name=".WangLuoError"/>
+        <activity android:name=".QS_1"/>
+        <activity android:name=".pro.publish.view.Publish"/>
+        <activity android:name=".pro.essense.view.essence_all.BB_file.fragment.XuanShang_comment"/>
+        <activity android:name=".pro.essense.view.essence_all.BB_file.utils.ImagePagerActivity"/>
+
+
+    </application>
+
+</manifest>

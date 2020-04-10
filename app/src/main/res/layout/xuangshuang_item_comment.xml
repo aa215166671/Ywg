@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:circle="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+  >
+
+    <!--头像-->
+    <com.kyun.android.baisibudejie.pro.newpost.view.views.CircleNetworkImageImage
+        android:id="@+id/comment_item_touxiang"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        circle:civ_border_width="1dp"
+        circle:civ_border_color="@android:color/transparent"
+        circle:civ_border_overlay="true"
+        circle:civ_fill_color="@android:color/transparent"
+        android:background="@mipmap/morentouxiang"/>
+    <LinearLayout
+        android:id="@+id/comment_item_buju1"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/comment_item_touxiang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/comment_item_fromname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/colorAccent1"
+            android:text="我" />
+
+        <TextView
+            android:id="@+id/comment_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/time_line_bg"
+            android:text="2019-10-5 20:53"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp">
+        <!--点赞功能-->
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="35sp"
+            android:layout_height="35sp"
+            android:background="#00000000"
+            android:src="@drawable/zan" />
+        <!--评论数-->
+        <TextView
+            android:id="@+id/comment_item_zan"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/yellow"
+            android:layout_weight="1"
+            android:text="100" />
+    </LinearLayout>
+
+    <!--评论内容-->
+    <TextView
+        android:id="@+id/comment_item_comment"
+        android:layout_below="@id/comment_item_touxiang"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/colorAccent1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+</RelativeLayout>

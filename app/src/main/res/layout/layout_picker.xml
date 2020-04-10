@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <com.kyun.android.baisibudejie.pro.mine.view.mine_all.SGZ_file.RiliView.PickerItemView
+            android:id="@+id/piv_year"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+        <TextView
+
+            android:id="@+id/tv_year"
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="match_parent"
+
+            android:gravity="center"
+
+            android:text="年" />
+
+
+
+        <com.kyun.android.baisibudejie.pro.mine.view.mine_all.SGZ_file.RiliView.PickerItemView
+
+            android:id="@+id/piv_month"
+
+            android:layout_width="0dp"
+            android:layout_weight="1"
+
+            android:layout_height="match_parent" />
+
+
+
+        <TextView
+
+            android:id="@+id/tv_month"
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="match_parent"
+
+            android:gravity="center"
+
+            android:text="月" />
+
+
+
+        <com.kyun.android.baisibudejie.pro.mine.view.mine_all.SGZ_file.RiliView.PickerItemView
+
+            android:id="@+id/piv_day"
+
+            android:layout_width="0dp"
+            android:layout_weight="1"
+
+            android:layout_height="match_parent" />
+
+
+
+        <TextView
+
+            android:id="@+id/tv_day"
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="match_parent"
+
+            android:gravity="center"
+
+            android:text="日" />
+
+
+
+        <!--<com.kyun.android.baisibudejie.pro.mine.view.mine_all.SGZ_file.RiliView.PickerItemView-->
+
+            <!--android:id="@+id/piv_hour"-->
+
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_weight="1"-->
+
+            <!--android:layout_height="match_parent" />-->
+
+
+
+        <!--<TextView-->
+
+            <!--android:id="@+id/tv_hour"-->
+
+            <!--android:layout_width="wrap_content"-->
+
+            <!--android:layout_height="match_parent"-->
+
+            <!--android:gravity="center"-->
+
+            <!--android:text="时" />-->
+
+
+
+        <!--<com.kyun.android.baisibudejie.pro.mine.view.mine_all.SGZ_file.RiliView.PickerItemView-->
+
+            <!--android:id="@+id/piv_minute"-->
+
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_weight="1"-->
+
+            <!--android:layout_height="match_parent" />-->
+
+
+
+        <!--<TextView-->
+
+            <!--android:id="@+id/tv_minute"-->
+
+            <!--android:layout_width="wrap_content"-->
+
+            <!--android:layout_height="match_parent"-->
+
+            <!--android:gravity="center"-->
+
+            <!--android:text="分" />-->
+
+
+
+        <!--<com.kyun.android.baisibudejie.pro.mine.view.mine_all.SGZ_file.RiliView.PickerItemView-->
+
+            <!--android:id="@+id/piv_second"-->
+
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_weight="1"-->
+
+            <!--android:layout_height="match_parent" />-->
+
+
+
+        <!--<TextView-->
+
+            <!--android:id="@+id/tv_second"-->
+
+            <!--android:layout_width="wrap_content"-->
+
+            <!--android:layout_height="match_parent"-->
+
+            <!--android:gravity="center"-->
+
+            <!--android:text="秒" />-->
+
+
+
+        <!--<com.kyun.android.baisibudejie.pro.mine.view.mine_all.SGZ_file.RiliView.PickerItemView-->
+
+            <!--android:id="@+id/piv_millisecond"-->
+
+            <!--android:layout_width="wrap_content"-->
+
+            <!--android:layout_height="match_parent" />-->
+
+
+
+        <!--<TextView-->
+
+            <!--android:id="@+id/tv_millisecond"-->
+
+            <!--android:layout_width="wrap_content"-->
+
+            <!--android:layout_height="match_parent"-->
+
+            <!--android:gravity="center"-->
+
+            <!--android:text="毫秒" />-->
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
